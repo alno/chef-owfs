@@ -10,7 +10,7 @@
 #
 # With this setup, any client (but owserver) uses owserver on the
 # local machine...
-! server: server = <%= @owserver.host %>:<%= @owserver.port %>
+! server: server = <%= @owserver[:host] %>:<%= @owserver[:port] %>
 #
 # USB device: DS9490
 server: <%= @device %>
@@ -40,4 +40,4 @@ ftp: port = 2120
 
 ####################### OWSERVER ########################
 
-server: port = <%= @owserver.host %>:<%= @owserver.port %>
+server: port = <%= @owserver[:host] %>:<%= @owserver[:port] %>
